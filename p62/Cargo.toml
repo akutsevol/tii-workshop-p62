@@ -1,6 +1,15 @@
 [package]
-name = "p62"
+name = "miniaes"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+rand="0.8.5"
+
+[lib]
+name = "miniaes"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+cbindgen = "0.26.0"
+
